@@ -58,6 +58,9 @@ Original file is located at
 
 # !pip install dash dash_bootstrap_components
 
+# !pip install flask
+
+from flask import Flask
 import dash
 from dash import dcc, html, Input, Output
 import dash_bootstrap_components as dbc
@@ -65,6 +68,13 @@ import plotly.express as px
 import pandas as pd
 import requests
 from datetime import datetime, timedelta
+
+# Configuração do servidor Flask
+server = Flask(__name__)
+
+# Inicializar o app Dash com o servidor Flask
+app = dash.Dash(__name__, server=server, external_stylesheets=[dbc.themes.BOOTSTRAP])
+
 
 # Função para buscar todos os dados do endpoint
 def fetch_all_data(url):
