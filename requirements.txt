@@ -1,0 +1,15 @@
+dash==2.18.0
+dash-bootstrap-components==1.6.0
+dash-core-components==2.0.0
+dash-html-components==2.0.0
+dash-table==5.0.0
+geopandas==0.14.4
+pandas==2.1.4
+pandas-datareader==0.10.0
+pandas-gbq==0.23.1
+pandas-stubs==2.1.4.231227
+plotly==5.15.0
+requests==2.32.3
+requests-oauthlib==1.3.1
+sklearn-pandas==2.2.0
+gunicorn
